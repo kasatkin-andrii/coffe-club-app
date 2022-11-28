@@ -1,8 +1,11 @@
 import MainNavigation from './src/navigation';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
 
 export default function App() {
   return (
-    <MainNavigation/>
+    <SafeAreaProvider>
+      <MainNavigation/>
+    </SafeAreaProvider>
   );
 }
 
