@@ -8,9 +8,7 @@ import { FontAwesome } from '@expo/vector-icons';
 const BagScreen = () => {
   return (
     <SafeAreaView style={styles.root}>
-      <Feather style={styles.backBtn} name="arrow-left" size={34} color={colors.black} />
       <Text style={styles.title}>BAG</Text>
-      <View style={styles.itemsContainer}></View>
 
       <View style={styles.itemsContainer}>
         <View style={styles.item}>
@@ -70,8 +68,7 @@ of flavour.</Text>
         <View style={styles.priceItem}>
           <FontAwesome name="dollar" size={14} color={colors.black} />
           <Text style={styles.finalPriceText}>36.35</Text>
-        </View>
-        
+        </View> 
       </View>
 
       <View style={styles.checkoutBtn}>
@@ -122,7 +119,6 @@ const styles = StyleSheet.create({
   priceContainer:{
     flexDirection: 'row',
     marginLeft: 10,
-    marginTop: 0,
     alignItems: 'center',
   },
   itemName:{
@@ -163,7 +159,8 @@ const styles = StyleSheet.create({
     height: 40,
     alignItems: 'center',
     justifyContent: 'center',
-    borderRadius: 10
+    borderRadius: 10,
+    marginTop: 10
   },
   checkoutBtnText: {
     color: colors.white,

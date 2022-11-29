@@ -12,8 +12,6 @@ const ProfileScreen = () => {
           <Image style={styles.profileImage} source={require('../images/BitmapprofileBg.png')} />
 
           <View style={styles.headerMenu}>
-            <Ionicons name="menu" size={24} color={colors.white} />
-            <Text style={styles.headerTextStyle}>MENU</Text>
             <Ionicons name="settings-sharp" size={24} color={colors.white} />
           </View>
 
@@ -74,7 +72,7 @@ const styles = StyleSheet.create({
     width: '100%',
     marginTop: 20,
     flexDirection: 'row',
-    justifyContent: 'space-between',
+    justifyContent: 'flex-end',
     paddingHorizontal: 20
   },
   headerTextStyle:{
